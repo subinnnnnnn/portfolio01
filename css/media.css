@@ -870,7 +870,7 @@
 @media screen and (max-width:480px){
   /*헤더영역*/
   header{
-    padding:10px;
+    padding:13px 20px;
   }
   header h1 img{
     width:60%;
@@ -1254,3 +1254,4 @@ footer .inner p img{
 
 
 }
+
