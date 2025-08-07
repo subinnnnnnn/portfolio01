@@ -172,8 +172,7 @@
 /*퀵메뉴*/
 #quick_menu{
   position:absolute;
-  /*bottom:0;
-  right:-243px;*/
+  right:50px;
   width:90px;
   z-index:999;
 }
