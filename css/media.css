@@ -994,7 +994,9 @@
     text-align:center;
     border-radius:0 0 20px 20px;
   }
-  
+  #container .manager_inner .manager_content ol li p span{
+    display:inline;
+  }  
   
   /*조은맘 이용후기*/
   #container .review_list{
@@ -1196,9 +1198,6 @@
   }
   #container .manager_inner ul li{
     width:calc((100% - 20px) / 3);
-  }
-  #container .manager_inner .manager_content ol li p span{
-    display:inline;
   }
 
   /*이용후기*/
