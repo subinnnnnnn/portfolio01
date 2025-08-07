@@ -1099,7 +1099,7 @@
     font-size:1.2rem;
   }
   footer .inner{
-    padding:25px 20px 95px;
+    padding:25px 20px 125px;
   }
   footer .inner ol{
     font-size:1.3rem;
@@ -1251,5 +1251,6 @@ footer .inner p img{
   .etc_area ul li{
     font-size:1.5rem;
   }
+
 
 }
