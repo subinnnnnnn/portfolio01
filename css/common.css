@@ -246,7 +246,7 @@ footer{
 footer .inner{
   display:flex;
   column-gap:30px;
-  padding:80px;
+  padding:80px 0;
 }
 
 footer .inner ol{
@@ -266,7 +266,7 @@ footer .inner ol li:last-child::before{
   position:absolute;
   top:50%;
   left:9%;
-  transform:translateX(-50%);
+  transform:translateY(-50%);
   width:3px;
   height:3px;
   border-radius:50%;
