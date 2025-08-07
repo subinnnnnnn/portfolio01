@@ -1012,6 +1012,9 @@
     font-size:1.2rem;
     line-height:0;
   }
+  #container .review_list li strong{
+    padding:7px 0 6px;
+  }  
   #container .review_area::after {
     display:none;
   }
