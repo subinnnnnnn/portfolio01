@@ -248,10 +248,7 @@ footer .inner{
   column-gap:30px;
   padding:80px;
 }
-footer .inner p img{
-  margin-bottom:2%;
-  width:20%;
-}
+
 footer .inner ol{
   display:flex;
   font-size:1.2rem;
