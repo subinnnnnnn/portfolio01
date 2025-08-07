@@ -1,0 +1,1247 @@
+@charset "UTF-8";
+@media (hover: hover){
+  /*이용요금안내*/
+  /*더보기*/
+  .hover_out{
+  display: inline-block;
+  vertical-align:middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hover_out:before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:#ffbd01;
+  border-radius:20px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hover_out:hover, 
+.hover_out:focus, 
+.hover_out:active{
+  color:#fff;
+}
+.hover_out:hover:before, 
+.hover_out:focus:before, 
+.hover_out:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+  
+ /*조은맘 서비스*/
+#container .infor_area ul.btn_area li a:hover{
+  position:relative;
+  background:#ffbd01;
+  overflow:hidden;
+  color:#fff;
+}
+#container .infor_area ul.btn_area li a:hover::after{
+  content:"";
+  display:block;
+  position:absolute;
+  width:60px;
+  height:65px;
+  top:8px;
+  right:0;
+  background:url("../images/img/btn_on_img.png") no-repeat;
+  background-size:cover;
+  opacity:0.5;
+}
+  #container .infor_area ul.btn_area li a:hover{
+  position:relative;
+  background:#ffbd01;
+  overflow:hidden;
+  color:#fff;
+}
+#container .infor_area ul.btn_area li a:hover::after{
+  content:"";
+  display:block;
+  position:absolute;
+  width:60px;
+  height:65px;
+  top:8px;
+  right:0;
+  background:url("../images/img/btn_on_img.png") no-repeat;
+  background-size:cover;
+  opacity:0.5;
+}
+
+/*산후관리사영역*/
+#container .manager_inner ul li:hover a{
+  position:relative;
+  background-color:#766c62;
+  border-radius:20px;
+  color:#fff;
+}
+#container .manager_inner ul li:hover a::after{
+  content:"";
+  display:block;
+  position:absolute;
+  top:50%;
+  right:-30px;
+  width:34px;
+  height:26px;
+  background:url("../images/icon/btn_arrow.png") no-repeat;
+  transform:translateY(-50%);
+}
+
+/*조은맘 이용후기*/
+#container .review_list li:hover:before,
+#container .review_list li:hover:after{ 
+  width:100%; 
+}
+#container .review_list li:hover a:before,
+#container .review_list li:hover a:after{ 
+  height:100%; 
+}
+
+/*조은맘이벤트*/
+#container .event_area .event_list li:hover img{
+ transform:scale(1.3);
+}
+#container .event_area .event_list li:hover p{
+  text-decoration:underline;
+  text-underline-offset:5px;
+  color:#766c62;
+}
+#container .event_area .event_list li:hover a div::after{
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.5);
+}
+
+/*조은맘뉴스외*/
+#container .news_area .news_tab > ul > li:hover{
+  opacity:.5;
+}
+.content_tab .list .b_txt:hover,
+.content_tab ul li:hover span:nth-of-type(1){
+  text-decoration:underline;
+  text-underline-offset:5px;
+}
+/*hover*/
+.etc_hover ul li{
+  display:inline-block;
+  vertical-align:middle;
+  -webkit-transform:perspective(1px) translateZ(0);
+  transform:perspective(1px) translateZ(0);
+  box-shadow:0 0 1px rgba(0, 0, 0, 0);
+  position:relative;
+  -webkit-transition-property:color;
+  transition-property:color;
+  -webkit-transition-duration:0.3s;
+  transition-duration:0.3s;
+}
+.etc_hover ul li:before {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:#3e8f2b;
+  -webkit-transform:scaleX(0);
+  transform:scaleX(0);
+  -webkit-transform-origin:50%;
+  transform-origin:50%;
+  -webkit-transition-property:transform;
+  transition-property:transform;
+  -webkit-transition-duration:0.3s;
+  transition-duration:0.3s;
+  -webkit-transition-timing-function:ease-out;
+  transition-timing-function:ease-out;
+}
+.etc_hover ul li:hover a, 
+.etc_hover ul li:focus a, 
+.etc_hover ul li:active a{
+  color:#fff;
+}
+.etc_hover ul li:hover:before, 
+.etc_hover ul li:focus:before, 
+.etc_hover ul li:active:before{
+  -webkit-transform:scaleX(1);
+  transform:scaleX(1);
+}
+
+}
+@media screen and (max-width:1600px){
+  /*메뉴*/
+  #gnb{
+    width:auto;
+  }
+  #gnb > ul > li > a{
+    padding:30px 20px;
+  }
+
+  /*퀵배너*/
+  #quick_menu{
+    right:-180px;
+  }
+  #quick_menu.fix{
+    right:10px;
+  }
+}
+
+/*1200px 사이즈*/
+@media screen and (max-width:1200px){
+  html{
+    overscroll-behavior:auto;
+  }
+
+  /*모바일용 전체메뉴일때*/
+  html.hidden, body.hidden{
+    overflow:hidden;
+  }
+
+  /*공통영역*/
+  .inner{
+    width:100%;
+    padding:0 50px;
+  }
+
+  /*header영역*/
+  header{
+    justify-content:flex-start;
+    position:relative;
+    padding:20px;
+  }
+  #gnb, .utill_area, .depth_bg{
+    display:none;
+  }
+
+  /*모바일용 헤더*/
+  .mobile_area{
+    display:block;
+  }
+  .btn_hamburger{
+    opacity:1;
+    visibility:visible;
+  }
+  #mobile_gnb{
+  display:none;
+  position:absolute;
+  top:0;
+  right:0;
+  z-index:9999;
+  width:80%;
+  height:100vh;
+  background-color:#fff;
+  transform:translateX(100%);
+  transition:0.3s ease-out;
+  }
+  #mobile_gnb.open{
+    transform:translateX(0);
+    display:block;
+  }  
+  #mobile_gnb > ul{
+    margin-top:97px;
+    border-top:1px solid #ddd;
+  }
+  #mobile_gnb > ul > li{
+    font-size:2.4rem;
+    border-bottom:1px solid #ddd;
+  }
+  #mobile_gnb > ul > li:hover,
+  #mobile_gnb > ul > li.active{
+    background-color:#ffbd01;
+  }
+  #mobile_gnb > ul > li:hover > a,
+  #mobile_gnb > ul > li.active > a{
+    color:#fff;
+  }
+  .btn_hamburger{
+    position:absolute;
+    right:20px;
+    top:50%;
+    z-index:99999;
+    transform:translateY(-50%);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:30px;
+    height:20px;
+    cursor:pointer;
+  }
+  .btn_hamburger span{
+    width:100%;
+    height:2px;
+    background-color:#333;
+    transition:0.3s;
+  }
+  .btn_hamburger.open span:first-child{
+    transform:translateY(9px) rotate(45deg);
+  }
+  .btn_hamburger.open span:nth-child(2){
+    opacity:0;
+  }
+  .btn_hamburger.open span:nth-child(3){
+    transform:translateY(-9px) rotate(-45deg);
+  }
+  #mobile_gnb > ul > li > a{
+    padding:20px;
+    line-height:2.4;
+  }
+  .bg_overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.7);
+    opacity:0;
+    visibility:hidden;
+    transition:opacity 0.3s;
+  }
+  .bg_overlay.open{
+    opacity:1;
+    visibility:visible;
+  }
+  #mobile_gnb .depth {
+    display:none;
+    overflow:hidden;
+    background-color:#eee;
+  }
+  #mobile_gnb .active .depth::before {
+    content: '';
+    display:block;
+  }
+  #mobile_gnb .depth li a{
+    padding:10px 20px;
+  }
+
+  /*메인배너*/
+  .container{
+    width:100%;
+  }
+  #main_visual li .main_txt .tite{
+    font-size:3.8rem;
+  }
+  #main_visual li .main_txt p.txt{
+    font-size:2.0rem;
+  }
+
+  /*조은맘서비스*/
+  #container .infor_area{
+    flex-direction:column;
+  }
+  #container .infor_area .tite_area{
+    width:100%;
+  }
+  #container .infor_area .tite_area ul.btn_area{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:50px;
+  }
+  #container .infor_area .tite_area ul.btn_area li{
+    width:calc(100%/3);
+  }
+  #container .main_tite p span{
+    display:inline-block;
+  }
+  #container .infor_area ul.btn_area li a{
+    width:auto;
+    padding:30px;
+    font-size:2.5rem;
+    text-align:center;
+    text-indent:0;
+    border-radius:0;
+    border-right:1px solid #e8e8e8;
+  }
+  #container .infor_area ul.btn_area li:first-child a{
+    border-radius:20px 0 0 20px;
+  }
+  #container .infor_area ul.btn_area li:last-child a{
+    border-right:none;
+    border-radius:0 20px 20px 0;
+  }
+  #container .infor_area ul.btn_area li.on a::after{
+    top:37%;
+  }
+  #container .infor_area .img_area{
+    width:100%;
+  }
+  #container .infor_area .img_area img{
+    width:65%;
+  }
+  #container .infor_area .img_area::before{
+    width:50%;
+    height:85%;
+  }
+
+  /*이용및 요금안내*/
+  #container .fee_area{
+    padding:150px 0 200px;
+    border-radius:0 150px 0 0;
+  }
+  #container ul.list_box{
+    flex-wrap:wrap;
+    gap:40px;
+  }
+  #container .review_area::after{
+    bottom:-10px;
+    right:0;
+  }
+  #container ul.list_box li{
+    width:calc((100% - 40px)/2);
+    font-size:3.0rem;
+  }
+  #container ul.list_box li .img{
+    width:100%;
+    height:100%;
+    background-position:center;
+    border-radius:20px;
+  }
+  #container ul.list_box li .txt{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    border-radius:0 0 20px 20px;
+  }
+  #container ul.list_box li .txt::before, 
+  #container ul.list_box li .txt::after{
+    display:none;
+  }
+  #container ul.list_box li .card .back .back_inner p{
+    font-size:2.5rem;
+    word-break:keep-all;
+  }
+  #container ul.list_box li .card .back .back_inner a {
+    padding:20px 0;
+    width:50%;
+    font-size: 2.4rem;
+  }
+
+  /*산후관리사*/
+  #container .manager_inner{
+    flex-direction:column;
+    column-gap:0;
+  }
+  #container .manager_inner .manager_content{
+    margin-top:50px;
+    width:100%;
+  }
+  #container .manager_inner ul{
+    display:flex;
+    column-gap:20px;
+    width:100%;
+  }
+  #container .manager_inner ul li{
+    width:calc((100% - 40px) / 3);
+    font-size:2.5rem;
+  } 
+
+  #container .manager_inner ul li:hover a::after,
+  #container .manager_inner ul li.on a::after{
+    top:100%;
+    right:0;
+    left:50%;
+    transform:translateX(-50%) rotate(90deg);
+  }
+  #container .manager_inner .manager_content img{
+    width:100%;
+  }
+  #container .manager_inner .manager_content ol li p{
+    width:80%;
+    padding:3% 5%;
+    font-size:2.4rem;
+  }
+
+  /*이벤트*/
+  .event_area .swiper-button-next:after, 
+  .event_area .swiper-rtl .swiper-button-prev:after,
+  .event_area .swiper-button-prev:after, 
+  .event_area .swiper-rtl .swiper-button-next:after,
+  .event_area .swiper-button-next,
+  .event_area .swiper-button-prev{
+    display:none;
+  }
+  /*퀵배너*/
+  #quick_menu, #quick_menu.fix{
+    position:fixed;
+    right:0;
+    bottom:0;
+    width:100%;
+  }
+  #quick_menu{
+    display:flex;
+  }
+  #quick_menu ul{
+    display:flex;
+    padding:0;
+    width:100%;
+    border-radius:0;
+  }
+  #quick_menu ul{
+    box-shadow:none;
+  }  
+  #quick_menu ul li{
+    width:calc(100%/3);
+    border-radius:0;
+  }
+  #quick_menu ul li a{
+    padding:5%;
+    font-size:2.0rem;
+  }
+  #quick_menu ul li:last-child a{
+    padding-bottom:0;
+  }
+  #quick_menu p.up_btn {
+    position:absolute;
+    right:10px;
+    bottom:120%;
+    width:80px;
+    height:80px;
+    background-color:rgba(255,255,255,0.8);  
+  }  
+  #quick_menu ul li a span{
+    display:inline;
+    padding-top:0;
+  }
+  #quick_menu ul li a::before{
+    display:inline-block;
+    position:relative;
+    top:0;
+    left:0;
+    transform:translateY(0);    
+    margin-left:0;
+    margin-right:10px;
+    width:50px;
+    height:50px;
+    background-size:64%;
+    vertical-align:middle;
+  }
+  #quick_menu p.up_btn a{
+    font-size:0.9rem;
+    padding:53% 5% 23%;
+  }
+  #quick_menu p.up_btn::before{
+    top:24%;
+    left:50%;
+    border-width:0px 10px 10px 10px;
+  }
+  
+  /*이벤트배너*/
+  #container .banner_area .txt_box{
+    top:62%;
+    transform:translateY(-62%);
+  }
+  #container .banner_area .txt_box p:nth-of-type(1){
+    font-size:2.5rem;
+  }
+  #container .banner_area .txt_box p:nth-of-type(2){
+    font-size:1.6rem;
+  }
+  #container .event_area .event_list li img{
+    width:100%;
+  }
+
+  /*조은맘 뉴스 외*/
+  #container .news_area{
+    flex-direction:column;
+  }
+  #container .news_area .news_tab{
+    width:100%;
+  }
+  .etc_area{
+    width:100%;
+  }
+  .etc_area ul li{
+    margin-top:50px;
+    width:calc((100% - 90px)/4);
+  }
+
+  /*푸터영역*/
+  footer .inner{
+    padding:80px 20px 110px;
+  }
+
+}
+
+/*1024px 사이즈*/
+@media screen and (max-width:1024px){ 
+  /*조은맘서비스안내*/
+  #container .infor_area ul.btn_area li a{
+    font-size:2.0rem;
+  }
+  
+  /*조은맘이용후기*/
+  #container .review_list{
+    flex-wrap:wrap;
+    gap:20px;
+  }
+  #container .review_list li{
+    width:calc((100% - 20px) /2);
+  }
+  #container .review_area::after{
+    width: 222px;
+    height: 258px;
+    bottom: -36%;
+    background-size: contain;
+  }
+
+  /*산후관리사*/
+  #container .manager_inner ul li{
+    font-size:1.8rem;
+    text-align:center;
+    text-indent:0;
+  }
+  #container .manager_inner ul li::before{
+    right:0%;
+    left:50%;
+    top:7%;
+    transform: translateX(-50%);
+  }
+  #container .manager_inner ul li a{
+    padding:71px 50px 10px 50px;
+    line-height:1.2;
+  }
+ #container .manager_inner ul li:nth-child(2) a{
+     padding:78px 50px 23px;
+ }
+  #container .manager_inner ul li span{
+    display:block;
+  }
+
+  /*퀵배너*/
+  #quick_menu ul li a::before{
+    width:40px;
+    height:40px;
+  }
+
+  /*이벤트*/
+  #container .banner_area .txt_box p:nth-of-type(1){
+    font-size:2.4rem;
+  }
+  #container .banner_area .txt_box p:nth-of-type(2){
+    font-size:1.5rem;
+  }
+  #container .banner_area img{
+    height:300px;
+    object-fit:cover;
+    object-position:50% 50%;
+  }
+  #container .banner_area .txt_box{
+    top:57%;
+    left:50%;
+    transform: translateY(-50%);
+  }
+} 
+
+@media screen and (max-width:900px){ 
+  /*메인*/
+  .main_visual_inner::after{
+    bottom:-2px;
+  }
+  .visual .swiper-slide img{
+    height:50vh;
+  }
+  .main_visual_inner::after{
+    height:13vh;
+  }
+  #main_visual li .main_txt .tite{
+    font-size:3.0rem;
+  }
+  #main_visual li .main_txt p.txt{
+    font-size:1.8rem;
+  }
+
+  /*조은맘서비스안내*/
+  #container .infor_area ul.btn_area li a{
+    padding:30px 20px;
+  }
+
+  /*조은맘이용안내*/
+  #container .fee_area{
+    padding:100px 0;
+  }
+  #container ul.list_box li .card{
+    height:90%;
+  }
+  #container ul.list_box li .card .back .back_inner strong{
+    font-size:2.4rem;
+  }
+  #container ul.list_box li .card .back .back_inner p{
+    font-size:1.8rem;
+  }
+  #container ul.list_box li .card .back .back_inner a{
+    font-size:1.8rem;
+  }
+
+  /*산후관리사*/
+  #container .manager_inner .manager_content ol li p{
+    font-size:2.0rem;
+  }
+  #container .manager_inner ul li a{
+    padding:71px 40px 10px 40px
+  }
+
+  /*이벤트*/
+  #container .banner_area img{
+    object-position:40% 50%;
+  }
+  #container .banner_area .txt_box{
+    left:40%;
+  }
+
+  /*조은맘 뉴스 외*/
+  .etc_area ul{
+    flex-wrap:wrap;
+    margin-top:50px;
+  }
+  .etc_area ul li{
+    margin-top:0;
+    width:calc((100% - 30px) /2 );
+  }
+
+  /*푸터영역*/
+  footer .inner{
+    flex-direction:column;
+    column-gap:0;
+    padding:50px 20px 110px;
+  }
+  footer .inner address ul{
+    flex-wrap:wrap;
+  }
+} 
+
+@media screen and (max-width:768px){
+  .inner{
+    padding:0 30px;
+  }
+
+  /*헤더영역*/
+  header h1 img{
+    width:80%;
+    vertical-align:middle;
+  }
+
+  /*햄버거메뉴*/
+  #mobile_gnb > ul{
+    margin-top:86px;
+  }
+  #mobile_gnb > ul > li{
+    font-size:1.8rem;
+  }
+  #mobile_gnb > ul > li > a{
+    padding:20px 10px 12px;
+    line-height:1.5;
+  }
+  #mobile_gnb .depth li a{
+    font-size:1.6rem;
+  }
+
+  /*메인영역*/
+  #main_visual li .main_txt .tite{
+    font-size:2.5rem;
+  }
+  #main_visual li .main_txt p.txt{
+    font-size:1.6rem;
+  }
+
+  /*조은맘 서비스 안내*/
+  #container .infor_area .tite_area ul.btn_area{
+    margin-top:30px;
+  }
+  #container .main_tite h4{
+    font-size:3.0rem;
+  }
+  #container .main_tite p{
+    font-size:1.6rem;
+  }
+  #container .infor_area ul.btn_area li a{
+    margin-top:0;
+    padding:30px 20px 20px;
+    font-size:1.8rem;
+    word-break:keep-all;
+  }
+  #container .infor_area ul.btn_area li a span{
+    display:block;
+  }
+  #container .infor_area .img_area img{
+    width:80%;
+  }
+
+  /*이용요금*/
+  #container .fee_area{
+    padding:80px 0 100px;
+  }
+  #container ul.list_box{
+    gap:20px;
+  }
+  #container ul.list_box li{
+    width:calc((100% - 20px) / 2);
+    font-size:2.0rem;
+  }
+  #container ul.list_box li .card{
+    height:100%;
+  }
+  #container ul.list_box li .txt{
+    padding:20px;
+  }
+  #container ul.list_box li .card .back{
+    padding:30px 20px;
+  }
+  #container ul.list_box li .card .back .back_inner{
+    padding:0;
+  }
+  #container ul.list_box li .card .back .back_inner strong{
+    font-size:2.0rem;
+  }
+  #container ul.list_box li .card .back .back_inner p{
+    padding:4% 0;
+    font-size:1.6rem;
+    word-break:break-all;
+  }
+  #container ul.list_box li .card .back .back_inner a{
+    margin:0 auto;
+    padding:0;
+  }
+
+  /*산후관리사*/
+  #container .manager_inner ul li{
+    font-size:1.6rem;
+  }
+  #container .manager_inner ul li a{
+    padding:70px 10px 10px;
+  }
+  #container .manager_inner .manager_content ol li p{
+    width:83%;
+    font-size:1.6rem;
+  }
+
+  /*광고배너*/
+  #container .banner_area .txt_box{
+    width:100%;
+    top:53%;
+    left:0;
+    padding:0 0 0 20px;
+    text-shadow:-1px 0px #fff, 0px 1px #fff, 1px 0px #fff, 0px -1px #fff;
+  }
+  #container .banner_area img {
+    object-position:5% 50%;
+  }
+
+  /*조은맘협력사*/
+  #container .partner_area img{
+    width:100%;
+  }
+
+  /*퀵배너*/
+  #quick_menu ul li a{
+    padding:9%;
+    font-size:1.8rem;
+  }
+  #quick_menu p.up_btn{
+    width:60px;
+    height:60px;
+  }
+  #quick_menu p.up_btn a{
+    padding: 50% 5% 23%;
+  }
+  #quick_menu p.up_btn::before{
+    border-width:0px 5px 5px 5px;
+  }
+} 
+
+@media screen and (max-width:480px){
+  /*헤더영역*/
+  header{
+    padding:10px;
+  }
+  header h1 img{
+    width:60%;
+  }
+  .main_visual_inner::after{
+    height:8vh;
+  }
+
+  /*메인배너*/
+  .visual .swiper-slide img{
+    height:40vh;
+  }
+  #main_visual li .main_txt{
+    top:34%;
+    padding:0 20px;
+  }
+  #main_visual li .main_txt .tite{
+    font-size:2.0rem;
+    letter-spacing:-0.095em;
+  }
+  #main_visual li .main_txt p.txt{
+    font-size:1.4rem;
+  }
+
+  /*조은맘 서비스안내*/
+  #container .infor_area{
+    margin:50px auto;
+  }
+  #container .main_tite h4{
+    font-size:2.5rem;
+  }
+  #container .main_tite p{
+    padding-top:5px;
+    font-size:1.4rem;
+  }
+  #container .infor_area .tite_area ul.btn_area{
+    margin:15px 0;
+  }
+  #container .infor_area ul.btn_area li a{
+    padding:26px 20px 20px;
+    font-size:1.4rem;
+  }
+  #container .infor_area ul.btn_area li:first-child a,
+  #container .infor_area ul.btn_area li:last-child a{
+    border-radius:0;
+  }
+
+  /*이용요금*/
+  #container .fee_area{
+    margin:50px 0 0;
+  }
+  #container ul.list_box li{
+    width:100%;
+  }
+  #container ul.list_box li .card{
+    height:30vh;
+  }
+  #container ul.list_box li .txt{
+    padding:15px 10px 10px;
+    font-size:1.6rem;
+  }
+  #container ul.list_box li .card .back{
+    padding:45px 20px;
+  }
+  #container ul.list_box li .card .back .back_inner strong{
+    font-size:2.4rem;
+  }
+  #container ul.list_box li .card .back .back_inner p{
+    padding:2% 0 6%;
+    font-size:1.6rem;
+    word-break:keep-all;
+  }
+  #container ul.list_box li .card .back .back_inner a{
+    padding:10px;
+    font-size:1.6rem;
+  }
+
+  /*산후관리사*/
+  #container .manager_inner{
+    margin-top:0;
+  }
+  #container .manager_area{
+    margin:50px auto 80px;    
+  }
+  #container .manager_inner ul li{
+    font-size:1.2rem;
+  }
+  #container .manager_inner ul li a{
+    padding:48px 0 10px;
+  }
+  #container .manager_inner ul li:nth-child(2) a{
+    padding:48px 0 24px;
+  }
+  #container .manager_inner ul li::before{
+    width:30px;
+    height:30px;
+    background-size:65%;
+  }
+  #container .manager_inner ul li:last-child:before{
+    width:30px;
+    height:30px;
+    background-size:80%;
+  }
+  #container .manager_inner .manager_content{
+    margin-top:25px;
+  }
+  #container .manager_inner .manager_content img{
+    display:block;
+    width:100%;
+    height:24vh;
+    object-fit:cover;
+    border-radius:20px 20px 0 0;    
+  }
+  #container .manager_inner .manager_content ol li p{
+    position:relative;
+    top:100%;        
+    bottom:0;
+    padding:26px 30px;         
+    width:100%;
+    font-size:1.4rem;
+    text-align:center;
+    border-radius:0 0 20px 20px;
+  }
+  
+  
+  /*조은맘 이용후기*/
+  #container .review_list{
+    margin:20px 0 50px;
+  }
+  #container .review_list li{
+    width:100%;
+    padding:20px 30px 2px;
+  }
+  #container .review_list li .txt{
+    -webkit-line-clamp:2;
+  }
+  #container .review_list li .id_txt{
+    padding:8px 6px;
+    font-size:1.2rem;
+    line-height:0;
+  }
+  #container .review_area::after {
+    display:none;
+  }
+
+  /*배너*/
+  #container .banner_area .txt_box{
+    left:0;
+    padding:0 5%;
+  }
+  #container .banner_area img{
+    height:250px;
+  }
+  #container .banner_area .txt_box p:nth-of-type(1){
+    font-size:1.9rem;
+    letter-spacing:-0.08em;
+  }
+  #container .banner_area .txt_box p:nth-of-type(2){
+    font-size:1.2rem;
+    line-height:1.5;
+  }
+  #container .banner_area .txt_box p:nth-of-type(2) em{
+    display:inline;
+  }
+  #container .banner_area img{
+    object-position:15% 50%;
+  }
+
+  /*조은맘 이벤트*/
+  #container .event_area{
+    margin:50px auto;
+  }
+  
+  /*조은맘 뉴스 외*/
+  #container .news_area .news_tab > ul > li.on{
+    font-size:2.5rem;
+  }
+  .content_tab .list{
+    column-gap:20px;
+  }
+  .content_tab .list .b_txt{
+    overflow:hidden;
+  }
+  .content_tab ul li span.tit{
+    width:80%;
+  }
+  .content_tab ul li span.tit a{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+  .content_tab .list .b_data{
+    width:auto;
+  }
+  .content_tab .list .b_data p{
+    font-size:1.2rem;
+  }
+  .etc_area ul{
+    gap:10px;
+  }
+  .etc_area ul li{
+    width: calc((100% - 10px) / 2);
+    font-size:1.6rem;
+  }
+  .etc_area ul li a{
+    padding:77px 10px 20px;
+  }
+
+  /*협력사*/
+  #container .partner_area{
+    padding:30px 0;
+  }
+  #container .partner_area .inner h2{
+    padding-bottom:20px;
+    font-size:2.5rem;
+  }
+
+  /*푸터영역*/
+  footer{
+    font-size:1.2rem;
+  }
+  footer .inner{
+    padding:25px 20px 95px;
+  }
+  footer .inner ol{
+    font-size:1.3rem;
+  }
+  /*퀵배너*/
+  #quick_menu ul li a{
+    padding:6% 0;
+    font-size:1.4rem;
+  }
+  #quick_menu ul li a span{
+    display:block;
+    padding-top:6%;
+  }
+  #quick_menu ul li a::before{
+    display:block;
+    left:50%;
+    transform:translateX(-50%);  
+    width:25px;
+    height:25px;
+    background-size:69%;
+  } 
+  #quick_menu p.up_btn{
+    width:40px;
+    height:40px;
+  }
+  
+} 
+
+@media screen and (max-width:320px){
+  /*헤더영역*/
+  .btn_hamburger{
+    width:20px;
+    height:14px;
+  }
+  .btn_hamburger.open span:first-child{
+    transform: translateY(3px) rotate(45deg);
+  }
+  #mobile_gnb > ul{
+    margin-top:56px;
+  }
+  #mobile_gnb > ul > li{
+    font-size:1.6rem;
+  }
+  #mobile_gnb .depth li a{
+    font-size:1.4rem;
+  }
+
+  /*메인배너 영역*/
+  #main_visual li .main_txt .tite{
+    font-size:1.8rem;
+    word-break:keep-all;
+  }
+  #main_visual li .main_txt p.txt{
+    font-size:1.2rem;
+    line-height:1.4;
+    word-break:keep-all;
+  }
+  #main_visual li .main_txt p.txt i{
+    display:inline;
+  }
+  .visual .swiper-slide img{
+    height:30vh;
+  }
+  
+
+  /*조은맘 서비스 안내*/
+  #container .main_tite h4{
+    font-size:2.0rem;
+  }
+  #container .main_tite p{
+    font-size:1.2rem;
+  }
+  #container .infor_area ul.btn_area li a{
+    padding:20px 0 13px;
+    font-size:1.2rem;
+  }
+  #container .infor_area .img_area img{
+    width:85%;
+  }
+  #container .infor_area .img_area::before{
+    bottom:-26px;
+  }
+
+  /*산후관리사*/
+  #container .manager_inner ul li{
+    letter-spacing:-0.08em;
+  }
+
+  /*이용요금안내*/
+  #container ul.list_box li{
+    font-size:1.8rem;
+  }
+
+  /*산후관리사*/
+  #container .manager_inner ul{
+    column-gap:10px;
+  }
+  #container .manager_inner ul li{
+    width:calc((100% - 20px) / 3);
+  }
+  #container .manager_inner .manager_content ol li p span{
+    display:inline;
+  }
+
+  /*이용후기*/
+  #container .review_list li{
+    padding:20px;
+  }
+  #container .review_list li .id_txt{
+    padding:8px 0;
+    font-size:1.0rem;
+  }
+  #container .review_list li strong{
+    font-size:1.6rem;
+  }
+  #container .review_list li .txt{
+    margin-bottom:10px;
+    font-size:1.2rem;
+  }
+  #container .review_list li .data{
+    padding:10px 0 0;
+  }
+
+  /*배너*/
+  #container .banner_area .txt_box p:nth-of-type(1){
+    font-size:1.6rem;
+  }
+  #container .banner_area .txt_box p:nth-of-type(2){
+    font-size:1.0rem;
+  }
+
+  /*조은맘 뉴스 외*/
+  #container .news_area .news_tab > ul > li.on{
+    font-size:2.0rem;
+  }
+  .content_tab .list{
+    column-gap:10px;
+  }
+  .content_tab .list .b_txt a{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+  .content_tab ul li span.tit{
+    width:70%;
+  }
+  .etc_area ul li{
+    font-size:1.5rem;
+  }
+
+}
