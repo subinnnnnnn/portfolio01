@@ -44,22 +44,6 @@ $(function(){
         disableOnInteraction:false,
       },
       loop:true,
-		/*
-      on: {
-        slideChangeTransitionStart() {
-          document.querySelectorAll('.visual .swiper-slide img').forEach(img => {
-            img.style.transform='scale(1)';
-            img.style.opacity='0.6';
-          });
-        },
-        slideChangeTransitionEnd() {
-          const active = document.querySelector('.visual .swiper-slide-active img');
-          if (active) {
-            active.style.transform = 'scale(1.08)';
-            active.style.opacity = '1';
-          }
-        }
-      }*/
     });
 
   //조은맘 서비스안내
@@ -108,14 +92,6 @@ $(function(){
     }
   });    
 
-  //산후관리사
-    // $('.manager_inner ul li').hover(function(){
-    //   var tab_id = $(this).attr('mann_tab');
-    //     $('.manager_inner ul li').removeClass('on');
-    //     $('.mann_cont').removeClass('on');
-    //     $(this).addClass('on');
-    //     $("#"+tab_id).addClass('on');
-    // });
 
   //광고배너
     var Bann = new Swiper(".banner_inner", {
@@ -192,5 +168,39 @@ $(function(){
     },    
   });
 
-
+  //산후관리안내
+  let manaTab = 0;
+  const manatabs = document.querySelectorAll('.manager_inner ul li');
+  const manaimages = document.querySelectorAll('.mann_cont'); 
+  const autoSlideDelay  = 4000;
+  let manaslideInterval;
+  function manaImage(index) {
+    manaimages.forEach((image, i) => {
+      image.style.display = i === index ? 'block' : 'none';
+    });
+    manatabs.forEach((tab, i) => {
+      tab.classList.toggle('on', i === index);
+    });
+  }
+  function mananextImage() {
+    manaTab = (manaTab + 1) % manaimages.length;
+    manaImage(manaTab);
+  }
+  function manastartSlide() {
+    manaslideInterval = setInterval(mananextImage, autoSlideDelay);
+  }
+  function manastopSlide() {
+    clearInterval(manaslideInterval);
+  }
+  manatabs.forEach((tab, index) => {
+    tab.addEventListener('mouseenter', () => {
+      manastopSlide();
+      manaTab = index;
+      manaImage(manaTab);
+      manastartSlide();
+    });
+  });
+  manaImage(manaTab);
+  manastartSlide();
+  
 });
