@@ -678,41 +678,42 @@
   </div>
   <!--//E:Wrap-->
   <script>
-    //산후관리안내
-    let manaTab = 0;
-    const manatabs = document.querySelectorAll('.manager_inner ul li');
-    const manaimages = document.querySelectorAll('.mann_cont'); 
-    const autoSlideDelay  = 4000;
-    let manaslideInterval;
-    function showImage(index) {
-      manaimages.forEach((image, i) => {
-        image.style.display = i === index ? 'block' : 'none';
-      });
-      manatabs.forEach((tab, i) => {
-        tab.classList.toggle('on', i === index);
-      });
-    }
-    function nextImage() {
-      manaTab = (manaTab + 1) % manaimages.length;
-      showImage(manaTab);
-    }
-    function startSlide() {
-      manaslideInterval = setInterval(nextImage, autoSlideDelay);
-    }
-    function stopSlide() {
-      clearInterval(manaslideInterval);
-    }
-    manatabs.forEach((tab, index) => {
-      tab.addEventListener('mouseenter', () => {
-        stopSlide();
-        manaTab = index;
-        showImage(manaTab);
-        startSlide();
-      });
+  //산후관리안내
+  let manaTab = 0;
+  const manatabs = document.querySelectorAll('.manager_inner ul li');
+  const manaimages = document.querySelectorAll('.mann_cont'); 
+  const autoSlideDelay  = 4000;
+  let manaslideInterval;
+  function manaImage(index) {
+    manaimages.forEach((image, i) => {
+      image.style.display = i === index ? 'block' : 'none';
     });
-    showImage(manaTab);
-    startSlide();
+    manatabs.forEach((tab, i) => {
+      tab.classList.toggle('on', i === index);
+    });
+  }
+  function mananextImage() {
+    manaTab = (manaTab + 1) % manaimages.length;
+    manaImage(manaTab);
+  }
+  function manastartSlide() {
+    manaslideInterval = setInterval(mananextImage, autoSlideDelay);
+  }
+  function manastopSlide() {
+    clearInterval(manaslideInterval);
+  }
+  manatabs.forEach((tab, index) => {
+    tab.addEventListener('mouseenter', () => {
+      manastopSlide();
+      manaTab = index;
+      manaImage(manaTab);
+      manastartSlide();
+    });
+  });
+  manaImage(manaTab);
+  manastartSlide();
 </script>
 </body>
 
 </html>
+
