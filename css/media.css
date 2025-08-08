@@ -860,7 +860,7 @@
     height:60px;
   }
   #quick_menu p.up_btn a{
-    padding: 50% 5% 23%;
+    padding: 36% 5% 23%;
   }
   #quick_menu p.up_btn::before{
     border-width:0px 5px 5px 5px;
@@ -1124,8 +1124,7 @@
   #quick_menu p.up_btn{
     width:40px;
     height:40px;
-  }
-  /*footer*/
+  } /*footer*/
 footer .inner p img{
   margin-bottom:2%;
   width:20%;
@@ -1254,4 +1253,5 @@ footer .inner p img{
 
 
 }
+
 
